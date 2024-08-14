@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <h1>rtt-vite-template</h1>
+      <h1 className="">rtt-vite-template</h1>
     </>
   );
 }
