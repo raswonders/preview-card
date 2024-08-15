@@ -1,9 +1,8 @@
+import { Product } from "./Product";
+import product from "./data";
+
 function App() {
-  return (
-    <>
-      <h1 className="">rtt-vite-template</h1>
-    </>
-  );
+  return <Product product={product} />;
 }
 
 export default App;
