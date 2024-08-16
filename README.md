@@ -1,22 +1,58 @@
-# Using the Figma design file
+# Frontend Mentor - Product preview card component solution
 
-Using this design file will help you practice building projects in the same way professionals do. Seeing the details in the design will help you improve your accuracy when building projects and build projects faster.
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).
 
-[Figma](https://www.figma.com/) is an extremely popular design tool that has a generous free tier and can also be used on both Windows and Mac computers.
+## Table of Contents
 
-To get started with Figma, [download the correct app for your operating system](https://www.figma.com/downloads/). You can then open the app and open the `.fig` design file by dragging it over the app and dropping it into the projects home screen.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-If you're going to use the Desktop App, you don't need to download the Font Installer from the downloads page. But if you're planning on using the Figma web app you should download and install it to ensure the fonts show up correctly.
+## Overview
 
-If you haven't used Figma before, here are a couple of great resources to get you up to speed: 
+### The challenge
 
-- [“Everything Developers Need To Know About Figma” article on Smashing Magazine](https://www.smashingmagazine.com/2020/09/figma-developers-guide/)
-- ["Introduction to Figma for Developers" video with Ryan Warner and Jason Lengstorf on Learn with Jason](https://www.learnwithjason.dev/introduction-to-figma-for-developers)
+Users should be able to:
 
----
+- View the optimal layout depending on their device's screen size
+- See hover and focus states for interactive elements
 
-**⚠️ IMPORTANT ⚠️: Please be sure not to share our design files with anyone else. We include `.gitignore` files in the starter code download to help prevent you from accidentally uploading it to GitHub. Another easy way to prevent this is to keep the design file separate from your codebase.**
+### Screenshot
 
----
+![](./screenshot.jpg)
 
-Thanks for being a PRO member. We hope you enjoy the challenge! 🙂
+### Links
+
+- Solution URL: [https://github.com/raswonders/preview-card](https://github.com/raswonders/preview-card)
+- Live Site URL: [https://magical-sopapillas-f6dff8.netlify.app/](https://magical-sopapillas-f6dff8.netlify.app/)
+
+## My process
+
+I took this as opportunity to practice mobile-first workflow. It felt more straight forward. I knew which design to start with and build from there.
+
+### Built with
+
+- Mobile-first workflow
+- [TS](https://www.typescriptlang.org/) - Typescript
+- [React](https://reactjs.org/) - JS library
+- [Tailwindcss](https://tailwindcss.com/) - For styles
+
+### What I learned
+
+I've positioned content within <img> with object-fit & object-position not through background positioning. First time i used these, hit a little road block with it but with help of community i've figured it out. 
+
+### Continued development
+
+Tailwind feels more natural I still need to look up many class names though. I'm sure doing more ui work will help here.
+
+## Author
+
+- Frontend Mentor - [@raswonders](https://www.frontendmentor.io/profile/raswonders)
+- Twitter - [@raswonders](https://www.twitter.com/raswonders)
+- LinkedIn - [Rastislav Hepner](https://www.linkedin.com/in/rastislavhepner/)
