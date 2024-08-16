@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import cart from "/src/assets/icon-cart.svg";
+import cart from "/assets/icon-cart.svg";
 
 interface ButtonProps {
   variant: string;

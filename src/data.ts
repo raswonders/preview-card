@@ -8,7 +8,7 @@ const product = {
     original: 169.99,
   },
   image: {
-    url: "/src/assets/chanel.png",
+    url: "/assets/chanel.png",
     alt_text: "Gabrielle Essence Eau De Parfum bottle by CHANEL",
   },
 };
