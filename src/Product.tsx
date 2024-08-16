@@ -2,23 +2,23 @@ import { Button } from "./Button";
 
 export function Product({ product }: { product: any }) {
   return (
-    <div className="my-7 mx-4 rounded-[10px] overflow-hidden bg-pure-white">
+    <div className="sm:max-w-[37.5rem] sm:max-h-[28.125rem] my-7 mx-4 rounded-[10px] overflow-hidden flex flex-col sm:flex-row bg-pure-white">
       <img
-        className="h-60 w-full object-cover object-center"
+        className="h-60 sm:h-auto w-full sm:w-1/2 sm: object-cover object-center"
         src={product.image.url}
         alt={product.image.alt}
       />
-      <section className="m-6 flex flex-col">
-        <span className="mb-3 font-montserrat font-medium text-sm uppercase tracking-[0.3125rem] text-aurometal-saurus">
+      <section className="m-6 sm:m-8 flex flex-col gap-5 sm:gap-auto">
+        <span className="font-montserrat font-medium text-sm uppercase tracking-[0.3125rem] text-aurometal-saurus">
           {product.category}
         </span>
-        <h1 className="mb-4 font-fraunces text-[2rem] font-bold leading-[1] text-gunmetal">
+        <h1 className="font-fraunces text-[2rem] font-bold leading-[1] text-gunmetal">
           {product.name}
         </h1>
-        <p className="mb-6 font-montserrat text-sm font-medium text-aurometal-saurus leading-[1.63]">
+        <p className="font-montserrat text-sm font-medium text-aurometal-saurus leading-[1.63]">
           {product.description}
         </p>
-        <div className="mb-5 flex gap-4 items-center">
+        <div className="flex gap-4 items-center">
           <div className="font-fraunces text-[2rem] font-bold leading-[1] text-deep-aquamarine">
             {product.price.current}
           </div>
