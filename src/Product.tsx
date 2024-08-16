@@ -5,7 +5,9 @@ export function Product({ product }: { product: any }) {
     <div className="sm:max-w-[37.5rem] sm:max-h-[28.125rem] my-7 mx-4 rounded-[10px] overflow-hidden flex flex-col sm:flex-row bg-pure-white">
       <img
         className="h-60 sm:h-auto w-full sm:w-1/2 object-cover object-center"
-        src={product.image.url}
+        src={product.image.url_desktop}
+        srcSet={`${product.image.url_desktop} 600w, ${product.image.url_mobile} 400w`}
+        sizes="(min-width: 640px) 600px, 400px"
         alt={product.image.alt_text}
       />
       <section className="m-6 sm:m-8 flex flex-col gap-5 sm:gap-auto">
