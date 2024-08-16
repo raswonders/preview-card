@@ -4,7 +4,7 @@ export function Product({ product }: { product: any }) {
   return (
     <div className="sm:max-w-[37.5rem] sm:max-h-[28.125rem] my-7 mx-4 rounded-[10px] overflow-hidden flex flex-col sm:flex-row bg-pure-white">
       <img
-        className="h-60 sm:h-auto w-full sm:w-1/2 sm: object-cover object-center"
+        className="h-60 sm:h-auto w-full sm:w-1/2 object-cover object-center"
         src={product.image.url}
         alt={product.image.alt}
       />
@@ -20,10 +20,10 @@ export function Product({ product }: { product: any }) {
         </p>
         <div className="flex gap-4 items-center">
           <div className="font-fraunces text-[2rem] font-bold leading-[1] text-deep-aquamarine">
-            {product.price.current}
+            ${product.price.current}
           </div>
           <div className="font-montserrat text-[0.8rem] font-medium leading-[1.76] line-through text-aurometal-saurus">
-            {product.price.original}
+            ${product.price.original}
           </div>
         </div>
         <Button variant="cta" onclick={() => alert("item added to cart")}>
