@@ -12,7 +12,7 @@ export function Button({ variant, children, onclick }: ButtonProps) {
   switch (variant) {
     case "cta":
       styles =
-        "flex items-center justify-center gap-2 py-4 font-montserrat font-bold text-sm bg-deep-aquamarine  rounded-[0.5rem] text-pure-white";
+        "flex items-center justify-center gap-2 py-4 font-montserrat font-bold text-sm bg-deep-aquamarine hover:bg-deep-aquamarine-hover transition-colors ease-in-out duration-300 rounded-[0.5rem] text-pure-white";
       break;
     default:
       break;
