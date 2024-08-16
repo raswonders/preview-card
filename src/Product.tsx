@@ -6,7 +6,7 @@ export function Product({ product }: { product: any }) {
       <img
         className="h-60 sm:h-auto w-full sm:w-1/2 object-cover object-center"
         src={product.image.url}
-        alt={product.image.alt}
+        alt={product.image.alt_text}
       />
       <section className="m-6 sm:m-8 flex flex-col gap-5 sm:gap-auto">
         <span className="font-montserrat font-medium text-sm uppercase tracking-[0.3125rem] text-aurometal-saurus">
