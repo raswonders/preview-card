@@ -3,14 +3,15 @@ import { Button } from "./Button";
 export function Product({ product }: { product: any }) {
   return (
     <div className="sm:max-w-[37.5rem] sm:max-h-[28.125rem] my-7 mx-4 rounded-[10px] overflow-hidden flex flex-col sm:flex-row bg-pure-white">
-      <img
-        className="h-60 sm:h-auto w-full sm:w-1/2 object-cover object-center"
-        src={product.image.url_desktop}
-        srcSet={`${product.image.url_desktop} 600w, ${product.image.url_mobile} 400w`}
-        sizes="(min-width: 640px) 600px, 400px"
-        alt={product.image.alt_text}
-      />
-      <section className="m-6 sm:m-8 flex flex-col gap-5 sm:gap-auto">
+      <picture className="w-full sm:w-1/2">
+        <source srcSet={product.image.url_desktop} media="(min-width: 640px)" />
+        <img
+          className="h-full object-cover object-center"
+          src={product.image.url_mobile}
+          alt={product.image.alt_text}
+        />
+      </picture>
+      <section className="sm:w-1/2 p-6 sm:p-8 flex flex-col gap-5 sm:gap-auto">
         <span className="font-montserrat font-medium text-sm uppercase tracking-[0.3125rem] text-aurometal-saurus">
           {product.category}
         </span>
